@@ -20,7 +20,7 @@ const GlobalData = ({globalData}) => {
                 </div>
                 <div className='metric'>
                     <span  className='label'>Dominance: </span>
-                    <span  className='result'>BTC: 40.7$  ETH: 21.2% </span>
+                    <span  className='result'>BTC: 40.7%  ETH: 21.2% </span>
                 </div>
                 <div className='metric'>
                     <span  className='label'>Gas: </span>
