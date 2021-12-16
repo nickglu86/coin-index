@@ -4,7 +4,9 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom';
 import axios from 'axios';
 
-import Index from './Components/Index/Index';
+import Index from './Views/Index';
+import Header from './Components/Layout/Header';
+import GlobalData from './Components/Index/GlobalData';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,25 +15,27 @@ function App() {
   const [news, setNews] = useState([]);
   const [trending, setTrending] = useState([]);
   const [fearAndGreed, setFearAndGreed] = useState([]);
+  const [globalData, setGlobalData] = useState([]);
 
   const getAPIsData = () => {
     let endpoints = [
       'https://crypto-news-apiii.herokuapp.com/news/cointelegraph',
       'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false',
       'https://api.coingecko.com/api/v3/search/trending',
-      'https://api.alternative.me/fng/?limit=14'
-
+      'https://api.alternative.me/fng/?limit=14',
+      'https://api.coingecko.com/api/v3/global'
     ];
 
     Promise.all(endpoints.map(
       (endpoint) => axios.get(endpoint)))
       .then(
-        ([ {data: news}, {data: chart}, {data: trending}, {data: fearandgreed}])=> {
+        ([ {data: news}, {data: chart}, {data: trending}, {data: fearandgreed}, {data: globalData}])=> {
             console.log('done');
             setChart(chart)
             setNews(news)
             setTrending(trending)
             setFearAndGreed(fearandgreed)
+            setGlobalData(globalData.data)
           }
       )
       .finally(() => {
@@ -52,11 +56,19 @@ function App() {
   return (
     <Router basename="/cryptojunkies">
       <main>
+          <Header/>
+          <GlobalData globalData={globalData} />
           <Switch>
             <Route 
               path="/" 
               render={(props) => (
-                <Index {...props} news={news} chart={chart} />
+                <Index 
+                  {...props}
+                  news={news}
+                  chart={chart}
+                  btcFaG={fearAndGreed} 
+                  trending={trending}
+                />
               )}  
               exact 
             />
