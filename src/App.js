@@ -6,7 +6,8 @@ import axios from 'axios';
 
 import Index from './Views/Index';
 import Header from './Components/Layout/Header';
-import GlobalData from './Components/Index/GlobalData';
+import GlobalData from './Components/Layout/GlobalData';
+import Footer from './Components/Layout/Footer';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       'https://api.coingecko.com/api/v3/global'
     ];
 
+
     Promise.all(endpoints.map(
       (endpoint) => axios.get(endpoint)))
       .then(
@@ -44,6 +46,9 @@ function App() {
       });
   }
 
+  const getBTCData = () => {
+    return chart.filter(coin => coin.symbol === 'btc')[0];
+  }
   useEffect(() => {
     getAPIsData();
   }, []);
@@ -54,10 +59,11 @@ function App() {
 
   
   return (
-    <Router basename="/cryptojunkies">
+    <Router basename="/">
       <main>
+      <GlobalData globalData={globalData} btcData={getBTCData()} />
           <Header/>
-          <GlobalData globalData={globalData} />
+         
           <Switch>
             <Route 
               path="/" 
@@ -73,6 +79,7 @@ function App() {
               exact 
             />
           </Switch>
+          <Footer/>
       </main>
   </Router>
   );

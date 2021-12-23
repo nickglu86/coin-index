@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
   color: rgba(41, 41, 41, 1);
 }
 
@@ -15,12 +14,14 @@ main{
   flex-direction: column;
   align-items: center;
   color: white;
+  background-color: #fff;
 }
 
 section{
-  width: 1180px;
-  margin: 0 auto;
+  width: 1240px;
+  margin: 20px auto;
   background: linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px);
+  border-radius: 10px;
 }
 
 .global-wrapper{
@@ -28,13 +29,12 @@ section{
     padding: 10px 0;
     width: 100%;
     border: 1px solid rgb(239, 242, 245);
-    margin-bottom: 20px;
 
 }
 .global-data{
   margin: 0 auto;
   padding: 0 14px;
-  width: 1180px;
+  width: 1240px;
   display: flex;
   justify-content: space-between;
 }
@@ -49,9 +49,9 @@ section{
 /* Header */
 
 header{
-  width: 1180px;
+  width: 1240px;
   margin: 0 auto;
-   padding: 20px 0 0;
+  padding: 10px 0 10px;
 }
 header .logo img{
   width: 80px;
@@ -63,13 +63,16 @@ header .logo figure, footer figure{
  font-size: 40px;
  font-weight: 700;
 }
-
 header nav {
-  margin: 20px auto;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  border-top: 1px solid rgb(239, 242, 245);
+  border-bottom: 1px solid rgb(239, 242, 245);
+  margin: 5px auto;
+  padding: 20px 0;
 }
+
 
 header nav a {
   text-decoration:  none;
@@ -156,15 +159,20 @@ header nav a[data-dev=indev]::after {
 }
 .news-item img {
   width: 100%;
+  min-height: 167px;
   margin: -20px 0;
 }
-.news-item h2{
-  padding-top: 15px;
+.news-item h2 {
+  padding: 15px 2px 0 4px;
   font-size: 0.9em;
-
+  text-align: justify;
 }
 /* Chart CSS */
-
+.crypto-chart {
+  box-shadow: rgba(88, 102, 126, 0.08) 0px 4px 24px, rgba(88, 102, 126, 0.12) 0px 1px 2px;
+  border-radius: 8px;
+  padding: 14px 16px 17px;
+}
 .crypto-search {
   margin: 25px;
   width: 900px;
@@ -191,16 +199,20 @@ header nav a[data-dev=indev]::after {
     #7918f2 48%,
     #4801ff 100%
   ); */
-  background-image: linear-gradient( 
-    -225deg, #f79323 0%, #675019 48%, #3f2719 100% );
-  color: #e2e2e2;
+  background-color: #a9a9a921;
+  color: black;
   font-size: 19px;
 }
 
 .search-input::placeholder {
-  color: #e2e2e2;
+  color: black;
 }
 
+.chart-header .coin {
+  min-width: 300px;
+  justify-content: end;
+  padding-right: 0;
+}
 
 .currency-container{
   display: flex;
@@ -277,6 +289,7 @@ header nav a[data-dev=indev]::after {
 .circ-supply{
   width: 240px;
   text-align: right;
+  padding-right: 5px;
 }
 
 .coin-marketcap {
@@ -297,3 +310,71 @@ p.coin-percent span {
 .green{
     color: green;
 }
+
+
+
+/* Footer */
+footer a{
+  text-decoration: none;
+  padding: 0 10px;
+}
+footer .footer-container{
+  width: 1240px;
+  margin: 0 auto;
+}
+footer {
+  margin-top: 60px;
+  padding-top: 54px;
+  padding-bottom: 20px;
+  background: linear-gradient(rgba(248, 250, 253, 0 ) 0%, rgb(248, 250, 253) 413px);
+  color: rgb(234, 234, 234);
+  width: 100%;
+  position: relative;
+}
+footer .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer figure{
+  width: 350px;
+  position: relative;
+}
+.site-info, .about-us{
+  margin-bottom: 40px;
+}
+footer h4{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.site-info-links{
+  padding: 0 0 20px 0;
+  margin-right: 10px;
+}
+.site-info-links a{
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.site-info-links a:hover{
+  text-decoration: underline;
+  transition: 3s;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us figcaption {
+  font-size: 28px;
+}
+.about-content{
+  margin-bottom: 20px;
+  max-width: 440px;
+}
+.follow-us.links img{
+  width: 44px;
+}
+
