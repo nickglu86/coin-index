@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/crypto-junkies-alpha/static/css/main.f21a4c24.chunk.css",
+    "main.js": "/crypto-junkies-alpha/static/js/main.04142f25.chunk.js",
+    "main.js.map": "/crypto-junkies-alpha/static/js/main.04142f25.chunk.js.map",
+    "runtime-main.js": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js",
+    "runtime-main.js.map": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js.map",
+    "static/js/2.4ac1a960.chunk.js": "/crypto-junkies-alpha/static/js/2.4ac1a960.chunk.js",
+    "static/js/2.4ac1a960.chunk.js.map": "/crypto-junkies-alpha/static/js/2.4ac1a960.chunk.js.map",
+    "index.html": "/crypto-junkies-alpha/index.html",
+    "static/css/main.f21a4c24.chunk.css.map": "/crypto-junkies-alpha/static/css/main.f21a4c24.chunk.css.map",
+    "static/js/2.4ac1a960.chunk.js.LICENSE.txt": "/crypto-junkies-alpha/static/js/2.4ac1a960.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f224516.js",
+    "static/js/2.4ac1a960.chunk.js",
+    "static/css/main.f21a4c24.chunk.css",
+    "static/js/main.04142f25.chunk.js"
+  ]
+}
