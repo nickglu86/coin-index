@@ -101,7 +101,10 @@
     justify-content:  space-between;
     align-items: center;
   }
-  
+  .coin-data p {
+    height: 50px;
+    line-height: 50px;
+  }
   .coin-price{
     width: 160px;
     font-size: 18px;

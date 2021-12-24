@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Coin = ({coin, rowNum}) => {
-    const  {name, image, symbol, current_price, total_volume, price_change_percentage_24h, market_cap, circulating_supply} = coin;
+    const  {name, image, symbol, current_price, total_volume, price_change_percentage_24h, market_cap, circulating_supply, market_cap_rank} = coin;
     return (
         <div className="currency-container">
             <div className="chart-row">
-                <h2>{rowNum + 1}</h2>
+                <h2>{market_cap_rank}</h2>
                 <div className="coin">
                     <img src={image} alt='crypto' />
                     <h2>{name}</h2> 
