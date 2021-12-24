@@ -1,0 +1,144 @@
+/* Chart CSS */
+.crypto-chart {
+    box-shadow: rgba(88, 102, 126, 0.08) 0px 12px 24px, rgba(88, 102, 126, 0.12) 0px 1px 2px;
+    border-radius: 8px;
+    padding: 14px 16px 17px;
+  }
+  .crypto-search {
+    margin: 25px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .crypto-search h1 {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .search-input {
+    padding-left: 16px;
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    /* background-image: linear-gradient(
+      -225deg,
+      #ac32e4 0%,
+      #7918f2 48%,
+      #4801ff 100%
+    ); */
+    background-color: #a9a9a921;
+    color: black;
+    font-size: 19px;
+  }
+  
+  .search-input::placeholder {
+    color: black;
+  }
+  
+  .chart-header .coin {
+    min-width: 300px;
+    justify-content: end;
+    padding-right: 0;
+  }
+  
+  .currency-container{
+    display: flex;
+    justify-content: center;
+  }
+  .chart-row h2{
+    font-size: 20px;
+      min-width: 50px;
+      text-align: center;
+  }
+  .chart-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+  }
+  .chart-row.chart-header {
+    font-size: 19px;
+    justify-content: space-between;
+  }
+  .chart-row.chart-header p {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .coin{
+    display: flex;
+    align-items:  center;
+    padding-right: 20px;
+    width: 280px;
+  
+  }
+  
+  .coin h2{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .coin img{
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+  }
+  .coin-symbol{
+      text-transform: uppercase;
+      padding: 0 10px;
+  }
+  
+  .coin-data{
+    display: flex;
+    text-align: center;
+    justify-content:  space-between;
+    align-items: center;
+  }
+  
+  .coin-price{
+    width: 160px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 20px;
+    letter-spacing: 1.4px;
+  }
+  .coin-marketcap, .coin-volume, .circ-supply{
+    opacity: 0.9;
+  }
+  .coin-volume{
+    width: 154px;
+    text-align: right;
+  }
+  .circ-supply{
+    width: 240px;
+    text-align: right;
+    padding-right: 5px;
+  }
+  
+  .coin-marketcap {
+    width: 190px;
+    letter-spacing: 1px;
+  }
+  .coin-percent{
+      width: 100px;
+      font-size: 18px;
+  }
+  p.coin-percent span {
+    display: none;
+  }
+  .red{
+      color: red;
+  }
+  
+  .green{
+      color: green;
+  }
+  

@@ -3,7 +3,8 @@ import Chart from "../Components/Index/Chart";
 import BTCFearGreed from "../Components/Index/BTCFearGreed";
 import Trending from "../Components/Index/Trending";
 
-const Index = ({news, btcFaG, trending, chart}) => {
+const Index = ({isLoaded, news, btcFaG, trending, chart}) => {
+ 
     return ( 
        <>
             <NewsFeed news={news} />

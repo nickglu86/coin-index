@@ -1,0 +1,14 @@
+/* General Styles */
+@import 'base/_general';
+
+/* Utils */
+@import 'utils/_loader';
+
+/* Layout */
+@import 'layout/_globalData';
+@import 'layout/_header';
+@import 'layout/_footer';
+
+/* Components */
+@import 'components/newsFeed';
+@import 'components/chart';

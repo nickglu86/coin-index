@@ -1,0 +1,67 @@
+
+/* Footer */
+footer a{
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  footer .footer-container{
+    width: 1240px;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 54px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(248, 250, 253, 0 ) 0%, rgb(248, 250, 253) 413px);
+    color: rgb(234, 234, 234);
+    width: 100%;
+    position: relative;
+  }
+  footer .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  footer figure{
+    width: 350px;
+    position: relative;
+  }
+  .site-info, .about-us{
+    margin-bottom: 40px;
+  }
+  footer h4{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .site-info-links{
+    padding: 0 0 20px 0;
+    margin-right: 10px;
+  }
+  .site-info-links a{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .site-info-links a:hover{
+    text-decoration: underline;
+    transition: 3s;
+  }
+  
+  .about-us {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us figcaption {
+    font-size: 28px;
+  }
+  .about-content{
+    margin-bottom: 20px;
+    max-width: 440px;
+  }
+  .follow-us.links img{
+    width: 44px;
+  }
+  
+  

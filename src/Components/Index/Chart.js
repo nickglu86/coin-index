@@ -1,13 +1,21 @@
 import Coin from "./Coin";
 import { useState } from "react";
 
-const ChartHeader = () => {
-    const [search, setSearch] = useState('');
+const Chart = ({chart}) => {
+
+const [search, setSearch] = useState('');
 
     const handleChange = e => {
         setSearch(e.target.value)
     };
 
+    const filteredCoins = chart.filter( coin => {
+        return   coin.name.toLowerCase().includes(search.toLowerCase()) 
+        || coin.symbol.toLowerCase().includes(search.toLowerCase());
+    }
+      
+    );
+const ChartHeader = () => {
     return (
             <div className="currency-container">     
                 <div className="chart-row chart-header">
@@ -28,13 +36,13 @@ const ChartHeader = () => {
     );
 }
 
-const Chart = ({chart}) => {
+
     return ( 
         <section>
             <div className="crypto-chart">   
             {ChartHeader()}       
             {
-            chart.map((coin, index) => {
+                filteredCoins.map((coin, index) => {
                 return(
                     <Coin
                         key={coin.id} 

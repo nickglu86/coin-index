@@ -1,0 +1,23 @@
+
+.global-wrapper{
+   
+    padding: 10px 0;
+    width: 100%;
+    border: 1px solid rgb(239, 242, 245);
+
+}
+.global-data{
+  margin: 0 auto;
+  padding: 0 14px;
+  width: 1240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.metric .label{
+  margin-right: 10px;
+  color: rgb(88, 102, 126)
+}
+.metric .result{
+  color: rgb(56, 97, 251) 
+}

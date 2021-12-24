@@ -1,0 +1,30 @@
+/* News Feed */
+.crypto-news{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .crypto-news a{
+    text-decoration: none;
+  }
+  .news-item{
+    max-width: 260px;
+    padding: 5px;
+  }
+  .news-item .img {
+     overflow: hidden;
+      border-radius: 10px;
+  }
+  .news-item img {
+    width: 100%;
+    min-height: 167px;
+    margin: -20px 0;
+  }
+  .news-item h2 {
+    padding: 15px 2px 0 4px;
+    font-size: 0.9em;
+    text-align: justify;
+  }
+  
+  
