@@ -1,16 +1,20 @@
 import './Styles/main.scss';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom';
 import axios from 'axios';
-
-import Index from './Views/Index';
-import Header from './Components/Layout/Header';
-import GlobalData from './Components/Layout/GlobalData';
-import Footer from './Components/Layout/Footer';
-
+import { BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom';
 import { endpoints } from './Utils/Endpoints';
 
-function App() {
+import Header from './Components/Layout/Header';
+import GlobalData from './Components/Layout/GlobalData';
+
+import Main from './Views/Main';
+import Index from './Views/Index';
+import News from './Views/News';
+
+import Footer from './Components/Layout/Footer';
+import Explore from './Views/Explore';
+
+const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const [chart, setChart] = useState([]);
@@ -64,7 +68,7 @@ function App() {
             <Route 
               path="/" 
               render={(props) => (
-                <Index 
+                <Main 
                   {...props}
                   isLoaded={isLoaded}
                   news={news}
@@ -74,6 +78,31 @@ function App() {
                 />
               )}  
               exact 
+            />
+            <Route 
+              path="/index" 
+              render={(props) => (
+                  <Index 
+                    {...props}
+                    chart={chart}
+                    trending={trending}
+                  />
+                )}  
+            />
+            <Route 
+                path="/news" 
+                render={(props) => (
+                    <News 
+                      {...props}
+                      news={news}
+                    />
+              )}   
+            />
+            <Route 
+                path="/explore" 
+                render={(props) => (
+                  <Explore />
+              )}   
             />
           </Switch>
           <Footer/>

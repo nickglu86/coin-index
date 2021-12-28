@@ -1,4 +1,5 @@
 /* News Feed */
+
 .crypto-news{
     display: flex;
     justify-content: space-between;
@@ -27,4 +28,63 @@
     text-align: justify;
   }
   
+  .main .crypto-news p,
+  .main .crypto-news .date{
+    display: none;
+  }
+
   
+/* News Page */
+.news .crypto-news{
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.news-feed a, .news-feed a *{
+  text-decoration: none;
+}
+.news .news-item{
+  max-width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+.news .news-item figure{
+  display: block;
+  width: 300px;
+  min-height: 160px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+.news .news-item img {
+  width: 300px;
+  max-height: 200px;
+  border-radius: 5px;
+  margin: 0px;
+}
+.news .news-content{
+  max-width: 74%;
+  position: relative;
+  padding: 10px 20px;
+}
+.news .news-item h2 {
+  padding: 30px 2px 0 4px;
+  font-size: 24px;
+}
+.news .crypto-news p {
+  display: block;
+  padding-top: 18px;
+  font-size: 17px;
+  width: 80%;
+}
+
+.news .crypto-news .date {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+

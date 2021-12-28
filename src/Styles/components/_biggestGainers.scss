@@ -1,0 +1,37 @@
+.biggest-gainers {
+    width: 500px;
+    margin: 10px 0 40px;
+  }
+  .gainer-coin * {
+    background: none;
+    display: flex;
+  }  
+  .gainer-title, .gainer-coin{
+    display: flex;
+    align-items: center;
+  }
+  .gainer-title {
+    padding: 5px 10px;
+  }
+  .gainer-coin h2 {
+    padding: 0 10px;
+  }
+  .gainer-coin img {
+    width: 30px;
+    height: 30px ;
+  }
+  .gainer-coin {
+    justify-content: space-between;
+    height: 40px;
+    padding: 3px 10px;
+    margin: 3px 0;
+  }
+  .gainer-label{
+    width: 220px;
+    text-align: left;
+  }
+  .gainer-ticker{
+    width: 50px;
+    text-align: right;
+    display: none;
+  }

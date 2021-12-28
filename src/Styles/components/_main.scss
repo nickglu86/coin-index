@@ -39,11 +39,11 @@
     color: black;
   }
   
-  .chart-header .coin {
-    min-width: 300px;
-    justify-content: end;
-    padding-right: 0;
-  }
+  // .chart-header .coin {
+  //   min-width: 300px;
+  //   justify-content: end;
+  //   padding-right: 0;
+  // }
   
   .currency-container{
     display: flex;
@@ -70,6 +70,10 @@
   .chart-row.chart-header p {
     font-weight: 700;
     letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .chart-row.chart-header h2{
+    cursor: pointer;
   }
   .coin{
     display: flex;
@@ -113,6 +117,7 @@
     padding-right: 20px;
     letter-spacing: 1.4px;
   }
+  
   .coin-marketcap, .coin-volume, .circ-supply{
     opacity: 0.9;
   }
@@ -133,6 +138,8 @@
   .coin-percent{
       width: 100px;
       font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
   }
   p.coin-percent span {
     display: none;

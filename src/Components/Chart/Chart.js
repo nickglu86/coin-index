@@ -1,7 +1,7 @@
 import Coin from "./Coin";
 import { useState } from "react";
 
-const Chart = ({chart}) => {
+const Chart = ({chart, lenght = 50}) => {
 
     const [search, setSearch] = useState('');
     const [chartData, setChartData] = useState(chart);
@@ -41,6 +41,9 @@ const Chart = ({chart}) => {
         return (
                 <div className="currency-container">     
                     <div className="chart-row chart-header">
+                    <h2 
+                        onClick={() => sort('market_cap_rank')}
+                     >#</h2>
                     <div className="coin">
                         <form>
                             <input type="text" placeholder="Search" className="search-input"  onChange={handleChange} />
@@ -74,7 +77,7 @@ const Chart = ({chart}) => {
             <div className="crypto-chart">   
             {ChartHeader()}       
             {
-                filteredCoins.map((coin, index) => {
+                filteredCoins.slice(0,lenght).map((coin, index) => {
                 return(
                     <Coin
                         key={coin.id} 

@@ -20,13 +20,11 @@ const Header = () => {
                 </figure>
             </div>
           <nav className={`header-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav}> 
-              <Link to="/" >Crypto Index</Link> 
+              <Link to="/" >Main</Link> 
+              <Link to="/index">Index</Link> 
               <Link to="/news">News</Link> 
-              <Link to="/nft">NFT</Link> 
-              {/* <Link to="/defi" data-dev="indev">DeFi</Link>  */}
-              <Link to="/metrics">Metrics</Link> 
-              <Link to="/invest" >Invest</Link> 
-              <Link to="/learn" >Learn</Link> 
+              <Link to="/explore" >Explore</Link> 
+              <Link to="/developers">Developers</Link> 
           </nav>
           <span  className={`toggle-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav} >
              <span>Toggle navigation</span>

@@ -1,0 +1,45 @@
+
+/* LEarn */
+.crypto-learn .container{
+    margin:  0 auto;
+  }
+  .crypto-learn .resources{
+    display: flex;
+    justify-content: center;
+  }
+  .crypto-learn h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  img.svg-logo {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    opacity:0.8;
+  }
+  img.svg-logo:hover{
+    opacity:1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+  }
+  .block{
+    padding: 23px;
+  }
+  .coingecko{
+    padding: 73px 50px;
+  }
+  .defi-pulse{
+    padding: 71px 10px;
+  }
+  .staking-rewards{
+    padding: 45px 0;
+  }

@@ -1,17 +1,20 @@
-import NewsFeed from "../Components/Index/NewsFeed";
-import Chart from "../Components/Index/Chart";
-import BTCFearGreed from "../Components/Index/BTCFearGreed";
-import Trending from "../Components/Index/Trending";
+import BiggestGainers from "../Components/Chart/BiggestGainers";
+import Chart from "../Components/Chart/Chart";
+import Trending from "../Components/Chart/Trending";
+
+const COINS_TO_SHOW = 50;
 
 const Index = ({isLoaded, news, btcFaG, trending, chart}) => {
- 
+
     return ( 
-       <>
-            <NewsFeed news={news} />
-            {/* <BTCFearGreed  btcFaG={btcFaG} />
-            <Trending trending={trending} /> */}
-            <Chart chart={chart} />        
-        </>
+        <div className="index">
+            <div className="index-header">
+                <BiggestGainers chart={chart} />    
+                <Trending trending={trending} />  
+            </div>
+
+            <Chart chart={chart} length={COINS_TO_SHOW} />        
+        </div>
      );
 }
 
