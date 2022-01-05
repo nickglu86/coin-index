@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/crypto-junkies-alpha/static/css/main.33dac62d.chunk.css",
-    "main.js": "/crypto-junkies-alpha/static/js/main.c2271809.chunk.js",
-    "main.js.map": "/crypto-junkies-alpha/static/js/main.c2271809.chunk.js.map",
+    "main.css": "/crypto-junkies-alpha/static/css/main.2ec08ee7.chunk.css",
+    "main.js": "/crypto-junkies-alpha/static/js/main.ba3c73fd.chunk.js",
+    "main.js.map": "/crypto-junkies-alpha/static/js/main.ba3c73fd.chunk.js.map",
     "runtime-main.js": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js",
     "runtime-main.js.map": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js.map",
     "static/js/2.cc495cfe.chunk.js": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js",
     "static/js/2.cc495cfe.chunk.js.map": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.map",
     "index.html": "/crypto-junkies-alpha/index.html",
-    "static/css/main.33dac62d.chunk.css.map": "/crypto-junkies-alpha/static/css/main.33dac62d.chunk.css.map",
+    "static/css/main.2ec08ee7.chunk.css.map": "/crypto-junkies-alpha/static/css/main.2ec08ee7.chunk.css.map",
     "static/js/2.cc495cfe.chunk.js.LICENSE.txt": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.LICENSE.txt",
     "static/media/coindesk.a6c7cad2.svg": "/crypto-junkies-alpha/static/media/coindesk.a6c7cad2.svg",
     "static/media/coingecko.a3b178db.png": "/crypto-junkies-alpha/static/media/coingecko.a3b178db.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.0f224516.js",
     "static/js/2.cc495cfe.chunk.js",
-    "static/css/main.33dac62d.chunk.css",
-    "static/js/main.c2271809.chunk.js"
+    "static/css/main.2ec08ee7.chunk.css",
+    "static/js/main.ba3c73fd.chunk.js"
   ]
 }
