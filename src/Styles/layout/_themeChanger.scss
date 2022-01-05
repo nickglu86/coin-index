@@ -6,7 +6,7 @@
 	visibility: hidden;
 	&:checked + label {
 		transform: rotate(360deg);
-		background-color: #000;
+		background-color: #292929;
 		&:before {
 			transform: translateX(30px);
 			background-color: #FFF;
