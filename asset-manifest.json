@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/crypto-junkies-alpha/static/css/main.d75f9c4b.chunk.css",
-    "main.js": "/crypto-junkies-alpha/static/js/main.1bb356b5.chunk.js",
-    "main.js.map": "/crypto-junkies-alpha/static/js/main.1bb356b5.chunk.js.map",
+    "main.css": "/crypto-junkies-alpha/static/css/main.33dac62d.chunk.css",
+    "main.js": "/crypto-junkies-alpha/static/js/main.c2271809.chunk.js",
+    "main.js.map": "/crypto-junkies-alpha/static/js/main.c2271809.chunk.js.map",
     "runtime-main.js": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js",
     "runtime-main.js.map": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js.map",
     "static/js/2.cc495cfe.chunk.js": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js",
     "static/js/2.cc495cfe.chunk.js.map": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.map",
     "index.html": "/crypto-junkies-alpha/index.html",
-    "static/css/main.d75f9c4b.chunk.css.map": "/crypto-junkies-alpha/static/css/main.d75f9c4b.chunk.css.map",
+    "static/css/main.33dac62d.chunk.css.map": "/crypto-junkies-alpha/static/css/main.33dac62d.chunk.css.map",
     "static/js/2.cc495cfe.chunk.js.LICENSE.txt": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.LICENSE.txt",
-    "static/media/coindesk.9bae8ee5.svg": "/crypto-junkies-alpha/static/media/coindesk.9bae8ee5.svg",
+    "static/media/coindesk.a6c7cad2.svg": "/crypto-junkies-alpha/static/media/coindesk.a6c7cad2.svg",
     "static/media/coingecko.a3b178db.png": "/crypto-junkies-alpha/static/media/coingecko.a3b178db.png",
-    "static/media/coinmarketcap.3fb3b87a.svg": "/crypto-junkies-alpha/static/media/coinmarketcap.3fb3b87a.svg",
-    "static/media/cointelegraph.79ed764e.svg": "/crypto-junkies-alpha/static/media/cointelegraph.79ed764e.svg",
+    "static/media/coinmarketcap.3f224fbe.svg": "/crypto-junkies-alpha/static/media/coinmarketcap.3f224fbe.svg",
+    "static/media/cointelegraph.875575eb.svg": "/crypto-junkies-alpha/static/media/cointelegraph.875575eb.svg",
     "static/media/defipulse.f8b058af.png": "/crypto-junkies-alpha/static/media/defipulse.f8b058af.png",
-    "static/media/main.scss": "/crypto-junkies-alpha/static/media/loading.081d0b28.gif",
     "static/media/theblock.0e4ecbcf.svg": "/crypto-junkies-alpha/static/media/theblock.0e4ecbcf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0f224516.js",
     "static/js/2.cc495cfe.chunk.js",
-    "static/css/main.d75f9c4b.chunk.css",
-    "static/js/main.1bb356b5.chunk.js"
+    "static/css/main.33dac62d.chunk.css",
+    "static/js/main.c2271809.chunk.js"
   ]
 }
