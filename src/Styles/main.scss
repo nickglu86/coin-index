@@ -1,3 +1,5 @@
+/* Global Scss vars */
+@import 'utils/globalVars';
 /* General Styles */
 @import 'base/_general';
 
@@ -7,6 +9,7 @@
 /* Layout */
 @import 'layout/_globalData';
 @import 'layout/_header';
+@import 'layout/themeChanger';
 @import 'layout/_footer';
 
 /* Components */

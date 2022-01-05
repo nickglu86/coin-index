@@ -6,21 +6,28 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: rgba(41, 41, 41, 1);
+
 }
 
+body{
+  color: $main-color;
+  background-color: $main-bcg-color;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode{
+  color: $drk-main-color;
+  background-color: $drk-main-bcg-color;
+  transition: color 0.3s ease;
+}
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  background-color: #fff;
 }
 
 section{
   width: 1240px;
   margin: 20px auto;
-  background: linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px);
   border-radius: 10px;
 }
 

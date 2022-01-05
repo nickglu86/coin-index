@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import BitcoinLogo from '../../Assets/BitcoinLogo';
+import ThemeChanger from './ThemeChanger';
 
 
 const Header = () => {
@@ -16,8 +17,9 @@ const Header = () => {
             <div className="logo">
                 <figure>
                     <BitcoinLogo />
-                    <figcaption>Cypto Junkies</figcaption> 
+                    <figcaption>Crypto Junkies</figcaption> 
                 </figure>
+                <ThemeChanger />
             </div>
           <nav className={`header-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav}> 
               <Link to="/" >Main</Link> 
@@ -26,6 +28,7 @@ const Header = () => {
               <Link to="/explore" >Explore</Link> 
               <Link to="/developers">Developers</Link> 
           </nav>
+
           <span  className={`toggle-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav} >
              <span>Toggle navigation</span>
           </span>

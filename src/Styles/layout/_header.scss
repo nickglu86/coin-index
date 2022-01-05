@@ -5,11 +5,17 @@ header{
     margin: 0 auto;
     padding: 10px 0 10px;
   }
+  .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
   header .logo img{
     width: 80px;
     display: none;
   } 
   header .logo figure, footer figure{
+   
    display: flex;
    align-items: center;
    font-size: 40px;
@@ -30,7 +36,12 @@ header{
     text-decoration:  none;
     font-size: 19px;
     font-weight: 600;
+    color: $menu-txt-color;
   }
+  body.dark-mode header nav a {
+    color: $drk-menu-txt-color;
+  }
+
   header nav a[data-dev=indev]::after {
     content: 'inDev';
     background-color: red;

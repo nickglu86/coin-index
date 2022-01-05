@@ -6,6 +6,7 @@ import { endpoints } from './Utils/Endpoints';
 
 import Header from './Components/Layout/Header';
 import GlobalData from './Components/Layout/GlobalData';
+import BitcoinLogo from './Assets/BitcoinLogo';
 
 import Main from './Views/Main';
 import Index from './Views/Index';
@@ -55,7 +56,9 @@ const App = () => {
   }
 
   if (!isLoaded) {
-    return <div className="loader"></div>;
+    return <div className="loader">
+       <BitcoinLogo />
+    </div>;
   }
 
   

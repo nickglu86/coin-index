@@ -1,0 +1,28 @@
+/* Main  Colors */
+$main-color: #292929;
+$sec-color: #58667e;
+$add-color: #000;
+
+$main-bcg-color: #fff;
+$sec-bcg-color: #fff;
+$add-bcg-color: #fff;
+
+$brdr-color: #eff2f5;
+$menu-txt-color:  #551A8B;
+
+$footer-bcg-color: linear-gradient(rgba(248, 250, 253, 0 ) 0%, rgb(248, 250, 253) 413px);
+
+/* Dark Mode  Colors */
+
+$drk-main-color: #fff;
+$drk-sec-color: #eaeaea;
+$drk-add-color: #eadfdf;
+
+$drk-main-bcg-color: #1a1a1c;
+$drk-sec-bcg-color: #c6538c;
+$drk-add-bcg-color: #c6538c;
+
+$drk-brdr-color: #eff2f51f;
+$drk-menu-txt-color:#eadfdf;
+
+$drk-footer-bcg-color: linear-gradient(rgba(248, 250, 253, 0 ) 0%, rgb(0, 0, 0) 413px);
