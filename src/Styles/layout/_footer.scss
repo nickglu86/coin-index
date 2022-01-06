@@ -35,7 +35,12 @@
   footer figure{
     width: 350px;
     position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
   }
+
   .site-info, .about-us{
     margin-bottom: 40px;
   }
@@ -75,3 +80,44 @@
   }
   
   
+  
+  
+@media only screen and (max-width: 641px) { 
+  footer .footer-container{
+    width: 100%;
+  }
+  footer{
+    padding: 0 15px;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .about-us{
+    flex-direction: column;
+  }
+  footer .footer{
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    width: auto;
+  }
+  .copy{
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer-links{
+    margin-bottom: 30px;
+  }
+  footer figure{
+    margin-bottom: 20px;
+   }
+  nav.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: none;
+  }
+  footer .footer a {
+    padding: 8px 18px;
+  }
+}

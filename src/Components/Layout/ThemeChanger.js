@@ -15,11 +15,7 @@ const ThemeChanger = () => {
         document.body.classList.add('dark-mode');
     }
   }
-  useEffect(() => {
-    const getTheme = localStorage.getItem('Theme');
-    if (getTheme === 'dark') return  document.body.classList.add('dark-mode');
-  })
-      
+ 
     return ( 
         
         <div className="theme-changer">

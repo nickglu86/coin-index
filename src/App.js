@@ -15,6 +15,10 @@ import News from './Views/News';
 import Footer from './Components/Layout/Footer';
 import Explore from './Views/Explore';
 
+const getTheme = localStorage.getItem('Theme');
+if (getTheme === 'dark'){document.body.classList.add('dark-mode')};
+ 
+
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 

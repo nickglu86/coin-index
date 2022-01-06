@@ -98,3 +98,10 @@
   font-size: 16px;
 }
 
+ 
+@media only screen and (max-width: 641px) { 
+    .crypto-news {
+      display: flex;
+      flex-direction: column;
+  }
+}

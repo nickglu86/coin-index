@@ -39,3 +39,10 @@
 		left: 4px;
 	}
 }
+
+@media only screen and (max-width: 641px) { 
+	.theme-changer {
+		display: none;
+	}
+	
+}

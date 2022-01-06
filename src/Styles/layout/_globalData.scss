@@ -26,3 +26,10 @@ body.dark-mode .global-wrapper{
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
+
+@media only screen and (max-width: 641px) { 
+  .global-wrapper {
+      padding: 0;
+      display: none;
+  }
+}
