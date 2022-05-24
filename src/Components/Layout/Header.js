@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import BitcoinLogo from '../../Assets/BitcoinLogo';
-
+import Logo from '../../Assets/logo.png'
 
 const Header = () => {
      const [isOpen, setOpen] = useState("false");
@@ -15,8 +15,9 @@ const Header = () => {
         <header>
             <div className="logo">
                 <figure>
-                    <BitcoinLogo />
-                    <figcaption>Cypto Junkies</figcaption> 
+                    {/* <BitcoinLogo /> */}
+                    <img src={Logo} />
+                    <figcaption>Coin Index</figcaption> 
                 </figure>
             </div>
           <nav className={`header-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav}> 
