@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import BitcoinLogo from '../../Assets/BitcoinLogo';
- 
-import Logo from '../../Assets/logo.png'
- 
+import Logo from '../../Assets/coinindex-logo.png';
 import ThemeChanger from './ThemeChanger';
  
 

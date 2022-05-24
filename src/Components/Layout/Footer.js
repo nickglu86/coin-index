@@ -3,6 +3,7 @@ import BitcoinLogo from '../../Assets/BitcoinLogo';
 import TwitterIcon from "../../Assets/Social/twitter.png";
 import TelegramIcon from "../../Assets/Social/telegram.png";
 import FacebookIcon from "../../Assets/Social/facebook.png";
+import Logo from '../../Assets/coinindex-logo.png';
 
 const Footer = () => {
     return (
@@ -29,8 +30,8 @@ const Footer = () => {
 
                     <div className="footer-logo">
                         <figure>
-                            <BitcoinLogo />
-                            <figcaption>Crypto Junkies</figcaption> 
+                            <img src={Logo} />     
+                            <figcaption>Coin Index</figcaption> 
                         </figure>
                     </div>
                     <div className="about-content">
@@ -55,7 +56,7 @@ const Footer = () => {
                 </div>
                <div className="footer">
                     <div className="copy">
-                        <span>&#169; 2021 CryptoJunkies </span>
+                        <span>&#169; 2022 CoinIndex </span>
                         <span>| Developed by nickglu86</span> 
                     </div>
                     <div className="footer-links">

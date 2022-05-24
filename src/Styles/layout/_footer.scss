@@ -6,7 +6,7 @@
     padding-bottom: 20px;
     background: $footer-bcg-color;
     background: linear-gradient(rgba(248, 250, 253, 0 ) 0%, rgb(248, 250, 253) 413px);
-    color: rgb(234, 234, 234);
+    color: $main-color;
     width: 100%;
     position: relative;
   }
@@ -24,7 +24,7 @@
   }
   body.dark-mode footer{
     background: $drk-footer-bcg-color;
-  
+    color: $drk-main-color;
   }
   footer .footer{
     display: flex;
@@ -43,6 +43,9 @@
 
   .site-info, .about-us{
     margin-bottom: 40px;
+  }
+  footer .footer-logo img {
+    width: 80px;
   }
   footer h4{
     font-weight: 700;
