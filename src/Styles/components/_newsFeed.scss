@@ -8,10 +8,20 @@
   }
   .crypto-news a{
     text-decoration: none;
+    color: $menu-txt-color;
   }
+  body.dark-mode  .crypto-news a{
+    color: $drk-menu-txt-color;
+  }
+
   .news-item{
     max-width: 260px;
     padding: 5px;
+    background: linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px);
+    border-radius: 10px;
+  }
+  body.dark-mode .news-item{
+    background: none;
   }
   .news-item .img {
      overflow: hidden;
@@ -88,3 +98,10 @@
   font-size: 16px;
 }
 
+ 
+@media only screen and (max-width: 641px) { 
+    .crypto-news {
+      display: flex;
+      flex-direction: column;
+  }
+}

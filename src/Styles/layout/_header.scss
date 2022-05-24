@@ -5,10 +5,16 @@ header{
     margin: 0 auto;
     padding: 10px 0 10px;
   }
+  .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
   header .logo img{
     width: 80px;
   } 
   header .logo figure, footer figure{
+   
    display: flex;
    align-items: center;
    font-size: 40px;
@@ -29,7 +35,12 @@ header{
     text-decoration:  none;
     font-size: 19px;
     font-weight: 600;
+    color: $menu-txt-color;
   }
+  body.dark-mode header nav a {
+    color: $drk-menu-txt-color;
+  }
+
   header nav a[data-dev=indev]::after {
     content: 'inDev';
     background-color: red;
@@ -89,3 +100,133 @@ header{
       stroke:yellow;
     }
   }
+
+
+  
+@media only screen and (max-width: 641px) { 
+  /* Header + Nav */
+    header{
+      width: 100%;
+      padding-top: 0;
+      height: 60px;
+    }
+    header .logo figure, footer figure {
+      width: 100%;
+    }
+    
+    .logo {
+      width: 100%;
+      position: fixed;
+      height: 80px;
+      z-index: 1;
+      background: $main-bcg-color;
+    }
+    body.dark-mode .logo{
+      background: $drk-main-bcg-color;
+    
+    }
+    header nav {
+      display: none;
+      position: fixed;
+      z-index: 111111;
+      height: 100vh;
+      width: 100vw;
+      padding: 0 20px;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    header nav.open {
+      display: flex!important;
+      margin-top: 80px;
+      background: $main-bcg-color;
+    }
+    body.dark-mode  header nav.open{
+      background: $drk-main-bcg-color;
+    }
+      header nav a {
+        font-size: 30px;
+        height: 70px;
+        line-height: 70px;
+    }
+      figcaption {
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        line-height: 80px;
+      }
+      header .logo img {
+        width: 80px;
+        padding: 10px;
+    }
+    #bitcoin{
+      margin-right: 5px;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      background-color: transparent;
+    }
+    svg#Layer_1 {
+        width: 60px;
+        height: 60px;
+    }
+      
+    .toggle-nav {
+      position: fixed;
+      top: 14px;
+      right: 13px;
+      z-index: 11;
+      display: block;
+      width: 46px;
+      height: 50px;
+      cursor: pointer;
+      background: $main-bcg-color;
+    }
+    body.dark-mode .toggle-nav {
+      background: $drk-main-bcg-color;
+    }
+    .toggle-nav span,
+    .toggle-nav span:before,
+    .toggle-nav span:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      text-indent: -9999px;
+      background-color: $main-color;
+      height: 3px;
+      width: 100%;
+      transition: background-color 0.3s ease-in-out, transform 0.5s ease-in-out, top 0.5s ease-in-out;
+    }
+    body.dark-mode .toggle-nav span,
+    body.dark-mode .toggle-nav span:before,
+    body.dark-mode .toggle-nav span:after {
+      background-color: $drk-main-color;
+    }
+
+    body.dark-mode .toggle-nav.open span:before{
+      background-color: transparent;
+    }
+    
+    .toggle-nav span {
+      top: 10px;
+      width: 40px;
+    }
+    .toggle-nav span:before {
+      top: 14px;
+    }
+    .toggle-nav span:after {
+      top: 28px;
+    }
+    .toggle-nav.open  span {
+      transform: rotate(45deg);
+      top: 25px;
+    }
+    .toggle-nav.open span:before {
+      background-color: transparent;
+    }
+    .toggle-nav.open span:after {
+      top: 0;
+      transform: rotate(-90deg);
+    }
+
+}

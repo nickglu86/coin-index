@@ -6,6 +6,7 @@ import { endpoints } from './Utils/Endpoints';
 
 import Header from './Components/Layout/Header';
 import GlobalData from './Components/Layout/GlobalData';
+import BitcoinLogo from './Assets/BitcoinLogo';
 
 import Main from './Views/Main';
 import Index from './Views/Index';
@@ -13,6 +14,10 @@ import News from './Views/News';
 
 import Footer from './Components/Layout/Footer';
 import Explore from './Views/Explore';
+
+const getTheme = localStorage.getItem('Theme');
+if (getTheme === 'dark'){document.body.classList.add('dark-mode')};
+ 
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -55,7 +60,9 @@ const App = () => {
   }
 
   if (!isLoaded) {
-    return <div className="loader"></div>;
+    return <div className="loader">
+       <BitcoinLogo />
+    </div>;
   }
 
   

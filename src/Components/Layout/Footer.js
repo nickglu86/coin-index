@@ -4,7 +4,7 @@ import TwitterIcon from "../../Assets/Social/twitter.png";
 import TelegramIcon from "../../Assets/Social/telegram.png";
 import FacebookIcon from "../../Assets/Social/facebook.png";
 
-const Footer = ({title}) => {
+const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
@@ -30,7 +30,7 @@ const Footer = ({title}) => {
                     <div className="footer-logo">
                         <figure>
                             <BitcoinLogo />
-                            <figcaption>{title}</figcaption> 
+                            <figcaption>Crypto Junkies</figcaption> 
                         </figure>
                     </div>
                     <div className="about-content">
