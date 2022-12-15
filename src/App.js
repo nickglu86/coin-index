@@ -56,7 +56,7 @@ const App = () => {
   
   return (
     <DataContext.Provider value={apiData}>
-    <Router basename="/crypto-junkies-alpha">
+    <Router basename="/coin-index">
       <main>
           <GlobalData  />
           <Header/>
@@ -65,7 +65,7 @@ const App = () => {
               <Route path="/index" element={ <Index />} />
               <Route path="/news" element={     <News />} />
               <Route path="/explore"  element={ <Explore />} />
-          </Routes>
+            </Routes>
           <Footer/>
       </main>
   </Router>
