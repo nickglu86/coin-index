@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/crypto-junkies-alpha/static/css/main.2ec08ee7.chunk.css",
-    "main.js": "/crypto-junkies-alpha/static/js/main.ba3c73fd.chunk.js",
-    "main.js.map": "/crypto-junkies-alpha/static/js/main.ba3c73fd.chunk.js.map",
-    "runtime-main.js": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js",
-    "runtime-main.js.map": "/crypto-junkies-alpha/static/js/runtime-main.0f224516.js.map",
-    "static/js/2.cc495cfe.chunk.js": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js",
-    "static/js/2.cc495cfe.chunk.js.map": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.map",
-    "index.html": "/crypto-junkies-alpha/index.html",
-    "static/css/main.2ec08ee7.chunk.css.map": "/crypto-junkies-alpha/static/css/main.2ec08ee7.chunk.css.map",
-    "static/js/2.cc495cfe.chunk.js.LICENSE.txt": "/crypto-junkies-alpha/static/js/2.cc495cfe.chunk.js.LICENSE.txt",
-    "static/media/coindesk.a6c7cad2.svg": "/crypto-junkies-alpha/static/media/coindesk.a6c7cad2.svg",
-    "static/media/coingecko.a3b178db.png": "/crypto-junkies-alpha/static/media/coingecko.a3b178db.png",
-    "static/media/coinmarketcap.3f224fbe.svg": "/crypto-junkies-alpha/static/media/coinmarketcap.3f224fbe.svg",
-    "static/media/cointelegraph.875575eb.svg": "/crypto-junkies-alpha/static/media/cointelegraph.875575eb.svg",
-    "static/media/defipulse.f8b058af.png": "/crypto-junkies-alpha/static/media/defipulse.f8b058af.png",
-    "static/media/theblock.0e4ecbcf.svg": "/crypto-junkies-alpha/static/media/theblock.0e4ecbcf.svg"
+    "main.css": "/coin-index/static/css/main.140a7dd5.chunk.css",
+    "main.js": "/coin-index/static/js/main.8bc014ba.chunk.js",
+    "main.js.map": "/coin-index/static/js/main.8bc014ba.chunk.js.map",
+    "runtime-main.js": "/coin-index/static/js/runtime-main.c5b940a1.js",
+    "runtime-main.js.map": "/coin-index/static/js/runtime-main.c5b940a1.js.map",
+    "static/js/2.68d9b678.chunk.js": "/coin-index/static/js/2.68d9b678.chunk.js",
+    "static/js/2.68d9b678.chunk.js.map": "/coin-index/static/js/2.68d9b678.chunk.js.map",
+    "index.html": "/coin-index/index.html",
+    "static/css/main.140a7dd5.chunk.css.map": "/coin-index/static/css/main.140a7dd5.chunk.css.map",
+    "static/js/2.68d9b678.chunk.js.LICENSE.txt": "/coin-index/static/js/2.68d9b678.chunk.js.LICENSE.txt",
+    "static/media/coindesk.9bae8ee5.svg": "/coin-index/static/media/coindesk.9bae8ee5.svg",
+    "static/media/coingecko.a3b178db.png": "/coin-index/static/media/coingecko.a3b178db.png",
+    "static/media/coinindex-logo.6b729186.png": "/coin-index/static/media/coinindex-logo.6b729186.png",
+    "static/media/coinmarketcap.3fb3b87a.svg": "/coin-index/static/media/coinmarketcap.3fb3b87a.svg",
+    "static/media/cointelegraph.79ed764e.svg": "/coin-index/static/media/cointelegraph.79ed764e.svg",
+    "static/media/defipulse.f8b058af.png": "/coin-index/static/media/defipulse.f8b058af.png",
+    "static/media/theblock.0e4ecbcf.svg": "/coin-index/static/media/theblock.0e4ecbcf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f224516.js",
-    "static/js/2.cc495cfe.chunk.js",
-    "static/css/main.2ec08ee7.chunk.css",
-    "static/js/main.ba3c73fd.chunk.js"
+    "static/js/runtime-main.c5b940a1.js",
+    "static/js/2.68d9b678.chunk.js",
+    "static/css/main.140a7dd5.chunk.css",
+    "static/js/main.8bc014ba.chunk.js"
   ]
 }
