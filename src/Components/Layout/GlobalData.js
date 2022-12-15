@@ -1,12 +1,17 @@
-const GlobalData = ({ globalData, btcData}) => {
+import { DataContext } from "../../Utils/DataContext";
+import { useContext } from "react";
+const GlobalData = () => {
+    const { globalData, chart } = useContext(DataContext)
+    const getBTCData = () => {
+        return chart.filter(coin => coin.symbol === 'btc')[0];
+    }
+    const { current_price} = getBTCData();
+    const { active_cryptocurrencies } = globalData.data;
+    const marketCapInBTC = globalData.data.total_market_cap.btc;
+    const totalVolInBTC = globalData.data.total_volume.btc;
+    const btcDominance = globalData.data.market_cap_percentage.btc;
+    const ethDominance = globalData.data.market_cap_percentage.eth;
 
-   
-    const { current_price} = btcData;
-    const { active_cryptocurrencies } = globalData;
-    const marketCapInBTC = globalData.total_market_cap.btc;
-    const totalVolInBTC = globalData.total_volume.btc;
-    const btcDominance = globalData.market_cap_percentage.btc;
-    const ethDominance = globalData.market_cap_percentage.eth;
 
     let getMetric = metricType => {
        let mrktcap =  Math.floor(metricType * current_price);
@@ -44,3 +49,5 @@ const GlobalData = ({ globalData, btcData}) => {
 }
 
 export default GlobalData;
+
+

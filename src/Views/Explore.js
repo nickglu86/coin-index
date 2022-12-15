@@ -28,7 +28,7 @@ const Explore = () => {
                     <h3>News</h3>
                     <div className="resources">
                         <a href="cointelegraph.com">
-                        <img className="svg-logo"  src={coinTelegraphLogo} />
+                        <img className="svg-logo"  src="{coinTelegraphLogo}" />
                         </a>
                         <a href="coindesk.com">
                             <img className="svg-logo"  src={coinDeskLogo} />
