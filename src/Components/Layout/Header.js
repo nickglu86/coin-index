@@ -24,8 +24,8 @@ const Header = () => {
                 <ThemeChanger />
             </div>
           <nav className={`header-nav ${isOpen ? "" : "open"}`} onClick={toggleMobNav}> 
-              <Link to="/" >Main</Link> 
-              <Link to="/index">Index</Link> 
+              <Link to="/" >Home</Link> 
+              <Link to="/index">Crypto Chart</Link> 
               <Link to="/news">News</Link> 
               <Link to="/explore" >Explore</Link> 
               <Link to="/developers">Developers</Link> 

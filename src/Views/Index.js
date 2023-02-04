@@ -14,7 +14,6 @@ const Index = () => {
                 <BiggestGainers chart={chart} />    
                 <Trending trending={trending} />  
             </div>
-
             <Chart chart={chart} length={COINS_TO_SHOW} />        
         </div>
      );

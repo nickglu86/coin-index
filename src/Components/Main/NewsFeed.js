@@ -1,30 +1,50 @@
-const NewsFeed = ({news, length}) => {
-    
-    return ( 
-      <section>
-          <div className="crypto-news"> 
-          {
-            Object.values(news.slice(0, length)).map(newsItem => {
-              return(
-                <a href={newsItem.url}>
-                    <div className='news-item'>
-                      <div className="img">
-                        <img src={newsItem.image} />
-                      </div>
-                      <div className="news-content">
-                        <span className="date">{newsItem.date}</span>
-                        <h2>{newsItem.title}</h2>    
-                        <p>{newsItem.desc}</p>
-                      </div>
+import React from "react";
+import { Carousel, Card, Stack, Button } from "react-bootstrap";
 
-                    </div>
-                </a>
-              );
-            })
-          }  
-          </div>
-        </section>
-     );
-}
+const NewsFeed = ({ news, length }) => {
+  const NewsFeedCarousel = () => {
+    var newsCarouselContent = [];
+    for (var i = 0; i < length / 3; i++) {
+      var newsItemsRow = [];
+      for (var k = 0; k < 3; k++) {
+        newsItemsRow.push(
+          <Card style={{ width: "22rem", height: "340px" }} key={k}>
+            <Card.Body>
+              <img src={news[i * 3 + k].image} height="180" />
+              <Card.Title className="mt-1">{news[i * 3 + k].title}</Card.Title>
+              <Button variant="light" 
+                      style={{position: "absolute",
+                          right: "16px",
+                          bottom: "10px"}}>
+                  Read More
+                </Button>
+            </Card.Body>
+          </Card>
+        );
+      }
+      newsCarouselContent.push(
+        <Carousel.Item style={{ height: 500 }} key={i}>
+          <Stack
+            direction="horizontal"
+            className="h-100 justify-content-center align-items-center"
+            gap={3}
+          >
+            {newsItemsRow}
+          </Stack>
+        </Carousel.Item>
+      );
+    }
+    return <Carousel style={{ height: 500 }} bg="Light">{newsCarouselContent}</Carousel>;
+  };
+  return (
+    <section>
+      <div className="crypto-news">
+        <div className="bg-opacity-25 container-fluid">
+          <NewsFeedCarousel />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default NewsFeed;

@@ -1,7 +1,7 @@
 import Coin from "./Coin";
 import { useState } from "react";
 
-const Chart = ({chart, lenght = 50}) => {
+const Chart = ({chart, length, expanded = true }) => {
 
     const [search, setSearch] = useState('');
     const [chartData, setChartData] = useState(chart);
@@ -56,15 +56,22 @@ const Chart = ({chart, lenght = 50}) => {
                         <p className="coin-percent"
                              onClick={() => sort('price_change_percentage_24h')}
                         >24h %</p>
-                        <p className="coin-marketcap"
-                              onClick={() => sort('market_cap')}
-                        >Market Cap</p>
-                        <p className="coin-volume"
-                              onClick={() => sort('total_volume')}
-                        > Volume(24h)</p>
-                        <p className="circ-supply"
-                              onClick={() => sort('circulating_supply')}
-                        >  Circulating Supply  </p>
+                        {
+                            expanded && (
+                                <>
+                                    <p className="coin-marketcap"
+                                        onClick={() => sort('market_cap')}
+                                    >Market Cap</p>
+                                    <p className="coin-volume"
+                                        onClick={() => sort('total_volume')}
+                                    > Volume(24h)</p>
+                                    <p className="circ-supply"
+                                        onClick={() => sort('circulating_supply')}
+                                    >  Circulating Supply  </p>
+                                </>
+                            )
+                        }
+
                     </div>
                 </div>
                 </div>
@@ -77,12 +84,15 @@ const Chart = ({chart, lenght = 50}) => {
             <div className="crypto-chart">   
             {ChartHeader()}       
             {
-                filteredCoins.slice(0,lenght).map((coin, index) => {
+          
+                filteredCoins.slice(0,length).map((coin, index) => {
+                    
                 return(
                     <Coin
                         key={coin.id} 
                         coin={coin}
                         rowNum={index}
+                        expanded={expanded}
                     />
                 );
             })}  

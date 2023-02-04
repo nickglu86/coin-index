@@ -3,8 +3,9 @@ const Trending = ({trending : trendingCoins}) =>{
     const printTrending = (coin) => {
        return(
             <div className="trending-coin">
-               <img src={coin.item.thumb} />
+               <img src={coin.item.small} />
                 <div className="coin-label">{coin.item.name}</div>
+                <div  className="coin-ticker">{coin.item.market_cap_rank}</div>
                 <div  className="coin-ticker">{coin.item.symbol}</div>
         
             </div>

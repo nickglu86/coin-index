@@ -5,6 +5,9 @@
     border-radius: 8px;
     padding: 14px 16px 17px;
   }
+  .home .crypto-chart {
+    width: 50%;
+  }
   body.dark-mode .crypto-chart{
   background: none;
 }
@@ -228,3 +231,87 @@
   }
 
   }
+
+  
+/* Metrics Page */
+.fear-and-greed{
+  /* display: none; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.gaf-elem{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+    margin: 15px 0;
+}
+.gaf-elem:first-child{
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 7px;
+}
+.gaf-lbl{
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+ .fear-and-greed-img , .history-data{
+  width: 38%;
+}
+.fear-and-greed-img  img{
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.history-data, .history-data * {
+  color: black;
+  background-color: white;
+}
+.history-data{
+  padding: 30px 40px 0;
+}
+.gaf-values{
+  padding: 4px 0;
+}
+.gaf-num-val {
+   width: 40px;
+   height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+}
+.gaf-elem[gaf-attr="Fear"] .gaf-lbl{
+  color: #e39d64;
+}
+.gaf-elem[gaf-attr="Extreme Fear"] .gaf-lbl {
+  color: #db7d5b;
+}
+.gaf-elem[gaf-attr="Neutral"] .gaf-lbl {
+  color: #dfce60;
+}
+.gaf-elem[gaf-attr="Greed"] .gaf-lbl{
+  color: #9bbe44;
+}
+.gaf-elem[gaf-attr="Extreme Greed"] .gaf-lbl{
+  color: #79d75d;
+}
+.gaf-elem[gaf-attr="Fear"] .gaf-num-val{
+  background-color: #e39d64;
+}
+.gaf-elem[gaf-attr="Extreme Fear"] .gaf-num-val {
+  background-color: #db7d5b;
+}
+.gaf-elem[gaf-attr="Neutral"] .gaf-num-val {
+  background-color: #dfce60;
+}
+.gaf-elem[gaf-attr="Greed"] .gaf-num-val{
+  background-color: #9bbe44;
+}
+.gaf-elem[gaf-attr="Extreme Greed"] .gaf-num-val{
+  background-color: #79d75d;
+}

@@ -34,8 +34,11 @@ const BTCFearGreed = ({btcFaG}) => {
     const lastWeekGAFLabel = getGAFLabel(lastWeekGAF);
 
     return (  
+      <section >
           <div className="fear-and-greed" >
-              <img src={bitcoinFearIndexIMG} alt="Latest Crypto Fear & Greed Index" />
+            <div className="fear-and-greed-img" >
+                 <img src={bitcoinFearIndexIMG} alt="Latest Crypto Fear & Greed Index" />
+            </div>  
             <div className="history-data">
                 <h3>Historical Values</h3>
                 <div className="gaf-values">
@@ -72,6 +75,7 @@ const BTCFearGreed = ({btcFaG}) => {
          
             </div>
          </div>
+        </section>
     );
 }
 

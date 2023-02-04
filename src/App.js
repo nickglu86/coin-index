@@ -4,16 +4,14 @@ import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom';
 import { endpoints } from './Utils/Endpoints';
 import { DataContext } from './Utils/DataContext';
-import Header from './Components/Layout/Header';
-import GlobalData from './Components/Layout/GlobalData';
+import Layout from './Components/Layout/Layout';
 import BitcoinLogo from './Assets/BitcoinLogo';
-
-import Main from './Views/Main';
+import Home from './Views/Home';
 import Index from './Views/Index';
 import News from './Views/News';
-
-import Footer from './Components/Layout/Footer';
 import Explore from './Views/Explore';
+
+
 
 const getTheme = localStorage.getItem('Theme');
 if (getTheme === 'dark'){document.body.classList.add('dark-mode')};
@@ -27,14 +25,8 @@ const App = () => {
       (endpoint) => axios.get(endpoint)))
       .then(
         ([ 
-          {data: news},
-          {data: chart},
-          {data: trending},
-          {data: fearandgreed},
-          {data: globalData}
-        ]) => {
-              setApiData({chart,news,trending, fearandgreed, globalData})
-             }
+          {data: news}, {data: mainCoins}, {data: chart}, {data: trending}, {data: fearandgreed}, {data: globalData}, {data : copinBerau}, {data : dataDash}, {data : camerFous}
+        ]) => { setApiData({chart, mainCoins, news,trending, fearandgreed, globalData, youTube : { copinBerau , dataDash, camerFous }})}
       )
       .finally(() => {
         setIsLoaded(true);
@@ -56,18 +48,16 @@ const App = () => {
   
   return (
     <DataContext.Provider value={apiData}>
+      {console.log({apiData})}
     <Router basename="/coin-index">
-      <main>
-          <GlobalData  />
-          <Header/>
             <Routes>
-              <Route path="/" element={  <Main />} />
-              <Route path="/index" element={ <Index />} />
-              <Route path="/news" element={     <News />} />
-              <Route path="/explore"  element={ <Explore />} />
+               <Route path="/" element={<Layout />}>
+                <Route index element={  <Home />} />
+                <Route path="/index" element={ <Index />} />
+                <Route path="/news" element={     <News />} />
+                <Route path="/explore"  element={ <Explore />} />
+              </Route>
             </Routes>
-          <Footer/>
-      </main>
   </Router>
   </DataContext.Provider>
   );
