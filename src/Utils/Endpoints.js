@@ -13,3 +13,5 @@ export const endpoints  = [
 export default {
     endpoints,
 }
+
+//https://newsdata.io/api/1/news?apikey=pub_167632e1074e9c30ea0b34c3119c202cf3bd5&q=cryptocurrency%20,%20crypto%20,%20blockchain%20,%20bitcoin&language=en 

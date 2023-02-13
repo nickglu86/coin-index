@@ -15,7 +15,9 @@ const NewsFeed = ({ news, length }) => {
               <Button variant="light" 
                       style={{position: "absolute",
                           right: "16px",
-                          bottom: "10px"}}>
+                          bottom: "10px"}}
+                      href={news[i * 3 + k].url}    
+                          >
                   Read More
                 </Button>
             </Card.Body>
